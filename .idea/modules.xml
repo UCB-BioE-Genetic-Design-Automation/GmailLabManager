@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/GmailLabManager.iml" filepath="$PROJECT_DIR$/.idea/GmailLabManager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GmailLabManager.iml" filepath="$PROJECT_DIR$/GmailLabManager.iml" />
     </modules>
   </component>
 </project>
