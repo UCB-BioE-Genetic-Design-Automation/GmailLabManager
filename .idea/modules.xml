@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/GmailLabManager.iml" filepath="$PROJECT_DIR$/GmailLabManager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/GmailLabManager_main.iml" filepath="$PROJECT_DIR$/.idea/modules/GmailLabManager_main.iml" group="GmailLabManager" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/GmailLabManager_test.iml" filepath="$PROJECT_DIR$/.idea/modules/GmailLabManager_test.iml" group="GmailLabManager" />
     </modules>
   </component>
 </project>
