@@ -18,10 +18,10 @@ public class Main {
      * routing to validating and processing functions. */
     public static void main(String[] args) throws IOException {
 
-        // Create a Gmail service object.
+        /* Create a Gmail service object. */
         Gmail service = GmailService.getGmailService();
 
-        // Scan inbox for all unread messages.
+        /* Scan inbox for all unread messages. */
         List<String> labels = new ArrayList<>();
         String user = "me";
         labels.add("INBOX");
@@ -40,7 +40,7 @@ public class Main {
             }
         }
 
-        // Create list of corresponding Email objects.
+        /* Create list of corresponding Email objects. */
         ArrayList<Email> newEmails = new ArrayList<>();
         for (Message msg : msgList) {
             String mssgID = msg.getId();
@@ -51,16 +51,16 @@ public class Main {
         }
 
 
-        // Sample mapping of subjects to Assistant types
+        /* Sample mapping of subjects to Assistant types */
         HashMap<String, Assistant> assistants = new HashMap<>();
         HelloAssistant helloAss= new HelloAssistant();
         GoodbyeAssistant goodbyeAss = new GoodbyeAssistant();
         assistants.put("Hello", helloAss);
         assistants.put("Goodbye", goodbyeAss);
 
-        // For every email, verify validity of subject and body formatting.
-        // If valid, process the email. Otherwise, send reply message back to
-        // original sender.
+        /* For every email, verify validity of subject and body formatting.
+         If valid, process the email. Otherwise, send reply message back to
+         original sender. */
         Assistant assistant;
         for (Email email : newEmails) {
             String subject = email.getSubject();
