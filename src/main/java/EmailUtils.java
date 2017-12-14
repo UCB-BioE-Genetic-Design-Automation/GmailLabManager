@@ -91,17 +91,5 @@ public class EmailUtils {
                 .setRemoveLabelIds(labelsToRemove);
         service.users().messages().modify(userId, msgId, mods).execute();
     }
-//     /** Marks EMAIL as unread in USERID's inbox using SERVICE.  */
-//    public static void markRead(Gmail service, String userId, Email email) {
-//        ArrayList<String> labelsToAdd = new ArrayList<>();
-//        ArrayList<String> labelsToRemove = new ArrayList<>();
-//        labelsToAdd.add("READ");
-//        labelsToRemove.add("UNREAD");
-//        try {
-//            modifyMessage(service, userId, email.getMsgId(), labelsToAdd, labelsToRemove);
-//        } catch (IOException error) {
-//            System.out.println("Failed to modify message.");
-//        }
-//    }
 
 }
